@@ -4,67 +4,68 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
 }
 
 body {
     background-image: url('wallpaperflare.com_wallpaper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-main {
-    background-color: #272829ce;
-    margin: 10vh auto;
     display: flex;
+    align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    width: 800px;
+    min-height: 100vh;
+    color: white;
+}
+
+section {
+    position: relative;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    width: 600px;
     height: 600px;
-    color: white;
-}
-
-main > h1 {
-    margin: auto 100px;
-    font-size: 3em;
-}
-
-main > form {
-    margin-top: 25vh;
-}
-
-main > form > input {
-    border: none;
-    border-radius: 10px;
-    padding: 10px 10px;
-    width: 340px;
-    height: 20px;
-    font-size: 1em;
-    display: block;
-    margin-top: 25px;
-}
-
-div {
-    margin: 25px;
-}
-
-input[type="checkbox"] {
-    border: none;
-}
-
-main > form > input[type="submit"] {
-    height: auto;
-    margin: auto;
-    background-color: green;
-    color: white;
-    font-weight: bold;
-    transition: .3s;
-}
-
-main > form > input[type="submit"]:hover {
-    background-color: rgba(240, 248, 255, 0);
     border: 2px solid white;
-    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+}
 
+section > h1 {
+    font-size: 1.9em;
+    margin: 40px;
+    font-weight: bold;
+}
+
+section > form > div.input-box > input {
+    position: relative;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 15px;
+    width: 400px;
+    color: white;
+    margin: 30px;
+    outline: none;
+
+}
+
+section > form > div.input-box {
+    position: relative;
+}
+
+section > form > input {
+    display: block;
+    margin: 40px auto;
+}
+
+section > form > input[type="submit"] {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+section > form > input[type="submit"]:hover {
+    cursor: pointer;
 }
 

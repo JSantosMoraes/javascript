@@ -9,12 +9,12 @@ const emailInput = document.getElementById("idemail");
 const senhaInput = document.getElementById("idsenha");
 
 // Adiciona um evento ao formulário para tratar o envio
-loginForm.addEventListener("submit", function (event) {
-  event.preventDefault(); // Impede o envio padrão do formulário
+loginForm.addEventListener("submit", function (event) { // <<<<<<<
+  event.preventDefault(); // Impede o envio padrão do formulário // <<<<<<<
 
   // Obtém os valores digitados pelo usuário
-  const emailValue = emailInput.value.trim();
-  const senhaValue = senhaInput.value.trim();
+  const emailValue = emailInput.value.trim(); // <<<<<<<
+  const senhaValue = senhaInput.value.trim(); // <<<<<<<
 
   // Valida as credenciais
   if (emailValue === email && senhaValue === senha) {
