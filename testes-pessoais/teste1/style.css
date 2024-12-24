@@ -29,8 +29,8 @@ section {
 }
 
 section > h1 {
-    font-size: 1.9em;
-    margin: 40px;
+    font-size: 3em;
+    margin: 60px;
     font-weight: bold;
 }
 
@@ -54,6 +54,45 @@ section > form > div.input-box {
 section > form > input {
     display: block;
     margin: 40px auto;
+}
+
+section > form > div#termos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+section > form > div#termos > input[type="checkbox"] {
+    appearance: none; /* Remove o estilo padrão (pode não funcionar em alguns navegadores.)*/
+    -webkit-appearance: none; /* Compatibilidade com WebKit (pode não funcionar em alguns navegadores.)*/
+    width: 22px;
+    margin: 0px 10px;
+    height: 22px;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section > form > div#termos > input[type="checkbox"]:checked {
+    background-color: transparent;
+    border-color: white;
+  }
+
+section > form > div#termos > input[type="checkbox"]:checked::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: relative;
+    top: 1px;
+    left: 6px;
 }
 
 section > form > input[type="submit"] {
