@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;900&display=swap');
+
+/* Informações da estilização: 
+
+  - Os estilos estão separados em Flexbox/tamanhos/cores
+  - Feito em mobile first
+  - Feito usando Flexbox/Mediaquery
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,html {
+  font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+a.bwhatsapp {
+  position: fixed;
+  display: block;
+  right: 4%;
+  bottom: 4%;
+  width: 50px;
+  height: 50px;
+  
+  border-radius: 50%;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.481);
+  background-color: white;
+  background-image: url('imagens/iconewhatsapp.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header {
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+
+  height: 10vw;
+
+  background-color: #CFB53B;
+}
+
+header > a.comprepelo {
+  margin: 0px 30px;
+  font-size: 2vw;
+  padding: 5px;
+
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+}
+
+hr {
+  top: 1px;
+  border: none;
+  height: 0.1px;
+  width: 70%;
+  margin: 20px auto;
+
+  background-color: #18272f58;
+}
+
+section.promocoes {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.400);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+section.promocoes > div {
+  margin: auto;
+}
+
+section.promocoes > img {
+  width: 250px;
+}
+
+h2.titulo {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 10px 0px;
+}
+
+h3.preco {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-bottom: 3px;
+}
+
+h3.precodebaixo {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1em;
+  margin-bottom: 3px;
+}
+
+p.cartao {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+a.conferir {
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  padding: 8px;
+  width: 150px;
+  border-radius: 50px;
+  font-size: 0.9em;
+  text-align: center;
+  display: block;
+  transition: .3s ease;
+}
+
+a.conferir:hover {
+  color: green;
+  background-color: white;
+  border: 1px solid green;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div#linha1 {
+display: flex;
+margin-bottom: 30px;
+justify-content: center;
+align-items: center;
+}
+
+div#linha2 {
+display: flex;
+margin-bottom: 30px;
+justify-content: center;
+align-items: center;
+}
+
+div.secaodecompra_catalogo {
+display: block;
+justify-content: center;
+}
+
+section.promocoes_catalogo {
+box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+width: 200px;
+border: 1px solid rgba(0, 0, 0, 0.400);
+border-radius: 5px;
+padding: 10px;
+margin: 10px;
+}
+
+section.promocoes_catalogo > img {
+display: block;
+width: 135px;
+margin: auto;
+}
+
+section.promocoes_catalogo > h2.titulo {
+text-align: center;
+font-size: 1.1em;
+border-top: 0.5px solid rgba(0, 0, 0, 0.300);
+padding: 10px 0px;
+}
+
+section.promocoes_catalogo > h3.preco {
+text-align: center;
+font-weight: 600;
+font-size: 1em;
+margin-bottom: 3px;
+}
+
+section.promocoes_catalogo > h3.precodebaixo {
+text-align: center;
+font-weight: normal;
+font-size: 0.9em;
+margin-bottom: 3px;
+}
+
+section.promocoes_catalogo > p.cartao {
+text-align: center;
+margin-bottom: 10px;
+font-size: 0.8em;
+font-weight: 600;
+}
+
+section.promocoes_catalogo > a.conferir {
+text-decoration: none;
+color: white;
+background-color: green;
+padding: 7px;
+border-radius: 50px;
+font-size: 0.7em;
+text-align: center;
+display: block;
+transition: .3s ease;
+}
+
+section.promocoes_catalogo > a.conferir:hover {
+color: green;
+background-color: white;
+border: 1px solid green;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  background-color: #CFB53B;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.252);
+
+}
+
+footer>p {
+  width: 250px;
+  margin: auto;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+footer>p>a {
+  color: white;
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+footer>p {
+  color: white;
+  text-decoration: none;
+  transition: .3s ease;
+  font-weight: 500;
+}
+
+footer>p>a:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+
+section#pagfooter {
+  margin-top: 20px;
+}
+
+section#pagfooter>h4 {
+  font-weight: 500;
+  text-align: center;
+}
+
+section#pagfooter>hr {
+  height: 2px;
+  background-color: #F4D65E;
+  width: 17%;
+}
+
+section#pagfooter>img {
+  display: block;
+  margin: auto;
+  width: 150px;
+}
+
+section#confooter {
+  margin-top: 10px;
+}
+
+section#confooter>h4 {
+  font-weight: 500;
+  text-align: center;
+}
+
+section#confooter>hr {
+  height: 2px;
+  background-color: #F4D65E;
+  width: 17%;
+}
+
+section#confooter>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+section#confooter>div#numero {
+  padding-bottom: 30px;
+}
+
+section#confooter>div>img {
+  width: 25px;
+}
+
+section#confooter>div>p#redes {
+  margin: 0px 10px;
+}
