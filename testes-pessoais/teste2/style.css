@@ -64,6 +64,15 @@ header > a.comprepelo {
   text-decoration: none;
 }
 
+header > div {
+  display: flex;
+  position: absolute;
+  font-size: 1.2em;
+  color: white;
+  width: 200px;
+  right: 5px;
+}
+
 hr {
   top: 1px;
   border: none;
@@ -120,112 +129,29 @@ p.cartao {
   font-size: 1em;
 }
 
-a.conferir {
-  text-decoration: none;
+input[type="button"] {
+  border: 3px solid rgba(0, 0, 0, 0);
+  background-color: transparent;
   color: white;
+  font-weight: 600;
+  font-size: 1em;
   background-color: green;
-  padding: 8px;
-  width: 150px;
-  border-radius: 50px;
-  font-size: 0.9em;
-  text-align: center;
-  display: block;
-  transition: .3s ease;
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  cursor: pointer;
+  transition: .3s;
 }
 
-a.conferir:hover {
+input[type="button"]:hover {
   color: green;
+  border: 2px solid green;
   background-color: white;
-  border: 1px solid green;
 }
 
 * {
   margin: 0;
   padding: 0;
-}
-
-div#linha1 {
-display: flex;
-margin-bottom: 30px;
-justify-content: center;
-align-items: center;
-}
-
-div#linha2 {
-display: flex;
-margin-bottom: 30px;
-justify-content: center;
-align-items: center;
-}
-
-div.secaodecompra_catalogo {
-display: block;
-justify-content: center;
-}
-
-section.promocoes_catalogo {
-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
-width: 200px;
-border: 1px solid rgba(0, 0, 0, 0.400);
-border-radius: 5px;
-padding: 10px;
-margin: 10px;
-}
-
-section.promocoes_catalogo > img {
-display: block;
-width: 135px;
-margin: auto;
-}
-
-section.promocoes_catalogo > h2.titulo {
-text-align: center;
-font-size: 1.1em;
-border-top: 0.5px solid rgba(0, 0, 0, 0.300);
-padding: 10px 0px;
-}
-
-section.promocoes_catalogo > h3.preco {
-text-align: center;
-font-weight: 600;
-font-size: 1em;
-margin-bottom: 3px;
-}
-
-section.promocoes_catalogo > h3.precodebaixo {
-text-align: center;
-font-weight: normal;
-font-size: 0.9em;
-margin-bottom: 3px;
-}
-
-section.promocoes_catalogo > p.cartao {
-text-align: center;
-margin-bottom: 10px;
-font-size: 0.8em;
-font-weight: 600;
-}
-
-section.promocoes_catalogo > a.conferir {
-text-decoration: none;
-color: white;
-background-color: green;
-padding: 7px;
-border-radius: 50px;
-font-size: 0.7em;
-text-align: center;
-display: block;
-transition: .3s ease;
-}
-
-section.promocoes_catalogo > a.conferir:hover {
-color: green;
-background-color: white;
-border: 1px solid green;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: none;
 }
 
 footer {

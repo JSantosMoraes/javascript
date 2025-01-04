@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+
+Mobile: até 600px.
+Tablet: de 600 até 768px
+Desktop: de 992px até 1200px
+Telas Grandes: 1200px a cima 
+
+*/
+
+
+@media screen and (min-width: 610px) and (max-width: 992px) {
+
+    /*Tablet*/
+
+    header {
+        height: 7vw;
+      }
+
+    header > a.comprepelo {
+        font-size: 1.9vw;
+    }
+
+    section.promocoes {
+      display: flex;
+      justify-content: center;
+      margin: 40px auto;
+      box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+      width: 70vw;
+      border: 1px solid rgba(0, 0, 0, 0.400);
+      border-radius: 5px;
+      padding: 10px;
+    }
+    
+    section.promocoes > div {
+      margin: auto;
+    }
+    
+    section.promocoes > img {
+      width: 30vw;
+    }
+    
+    h2.titulo {
+      text-align: center;
+      font-size: 1.2em;
+      padding: 10px 0px;
+    }
+    
+    h3.preco {
+      text-align: center;
+      font-weight: normal;
+      font-size: 1.2em;
+      margin-bottom: 3px;
+    }
+    
+    h3.precodebaixo {
+      text-align: center;
+      font-weight: normal;
+      font-size: 1em;
+      margin-bottom: 3px;
+    }
+    
+    p.cartao {
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+    
+    a.conferir {
+      text-decoration: none;
+      color: white;
+      background-color: green;
+      padding: 8px;
+      width: 150px;
+      border-radius: 50px;
+      font-size: 0.9em;
+      text-align: center;
+      display: block;
+      transition: .3s ease;
+    }
+    
+    a.conferir:hover {
+      color: green;
+      background-color: white;
+      border: 1px solid green;
+    }
+
+    a.aporvalor {
+        width: 250px;
+    }
+
+      .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /*Desktop*/
+
+    header {
+        height: 5vw;
+      
+    }
+
+    header > a.comprepelo {
+        margin: 0px 30px;
+        font-size: 1.3vw;
+        padding: 5px 30px;
+      
+        border: 1px solid white;
+        color: white;
+        text-decoration: none;
+      }
+
+      section#tituloefrase > h1{
+        margin-top: 30px;
+        font-size: 2.5em;
+      }
+      
+      section#tituloefrase > p {
+        font-size: 0.9em;
+      }
+
+      section.promocoes {
+        display: flex;
+        justify-content: center;
+        margin: 40px auto;
+        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+        width: 70vw;
+        border: 1px solid rgba(0, 0, 0, 0.400);
+        border-radius: 5px;
+        padding: 10px;
+      }
+      
+      section.promocoes > div {
+        margin: auto;
+      }
+      
+      section.promocoes > img {
+        width: 30vw;
+      }
+      
+      h2.titulo {
+        text-align: center;
+        font-size: 1.2em;
+        padding: 10px 0px;
+      }
+      
+      h3.preco {
+        text-align: center;
+        font-weight: normal;
+        font-size: 1.2em;
+        margin-bottom: 3px;
+      }
+      
+      h3.precodebaixo {
+        text-align: center;
+        font-weight: normal;
+        font-size: 1em;
+        margin-bottom: 3px;
+      }
+      
+      p.cartao {
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 10px;
+        font-size: 1em;
+      }
+      
+      a.conferir {
+        text-decoration: none;
+        color: white;
+        background-color: green;
+        padding: 8px;
+        width: 150px;
+        border-radius: 50px;
+        font-size: 0.9em;
+        text-align: center;
+        display: block;
+        transition: .3s ease;
+      }
+      
+      a.conferir:hover {
+        color: green;
+        background-color: white;
+        border: 1px solid green;
+      }
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+    /*Telas Grandes*/
+    
+    header {
+        height: 5vw;
+      
+    }
+
+    header > a.comprepelo {
+        margin: 0px 30px;
+        font-size: 1.2vw;
+      }
+
+      ul>li {
+        margin: 0px 3vw;
+        font-size: 17px;
+      }
+
+      section#tituloefrase > h1{
+        margin-top: 30px;
+        font-size: 2.5em;
+      }
+      
+      section#tituloefrase > p {
+        font-size: 0.9em;
+      }
+
+      section.promocoes {
+        display: flex;
+        justify-content: center;
+        margin: 70px auto;
+        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+        width: 800px;
+        border: 1px solid rgba(0, 0, 0, 0.400);
+        border-radius: 5px;
+        padding: 10px;
+      }
+      
+      section.promocoes > div {
+        margin: auto;
+      }
+      
+      section.promocoes > img {
+        width: 450px;
+      }
+      
+      h2.titulo {
+        text-align: center;
+        font-size: 1.5em;
+        padding: 10px 0px;
+      }
+      
+      h3.preco {
+        text-align: center;
+        font-weight: normal;
+        font-size: 1.5em;
+        margin-bottom: 3px;
+      }
+      
+      h3.precodebaixo {
+        text-align: center;
+        font-weight: normal;
+        font-size: 1.3em;
+        margin-bottom: 3px;
+      }
+      
+      p.cartao {
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 20px;
+        font-size: 1.3em;
+      }
+      
+      a.conferir {
+        text-decoration: none;
+        color: white;
+        background-color: green;
+        padding: 8px;
+        width: 250px;
+        border-radius: 50px;
+        font-size: 1.1em;
+        text-align: center;
+        display: block;
+        transition: .3s ease;
+      }
+      
+      a.conferir:hover {
+        color: green;
+        background-color: white;
+        border: 1px solid green;
+      }
+
+}
