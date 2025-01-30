@@ -4,7 +4,7 @@ class Pessoa{
   }
 }
 
-let p1 = new Pessoa('Bruno')
+let p1 = new Pessoa(10)
 let p2 = new Pessoa('Asdervardson')
 let p3 = new Pessoa('Brenasclartel')
 
