@@ -1,3 +1,5 @@
+// Class (ES6)
+
 class Pessoa {
   constructor(pnome, pidade) {
     this.nome = pnome;
