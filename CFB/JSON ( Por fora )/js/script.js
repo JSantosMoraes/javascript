@@ -23,3 +23,9 @@ const objs = [{
 const jsonData = JSON.stringify(objs) // Convertendo o objeto para JSON
 
 console.log(jsonData)
+
+// Convertendo JSON para objeto
+
+const objData = JSON.parse(jsonData);
+
+console.log(objData)
